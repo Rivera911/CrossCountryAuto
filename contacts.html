@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="Java Script/script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <title>Контакты CCA</title>
+</head>
+
+<body style="background-color: #333;" class="mulish">
+    <div class="header" style="background-color: black;">
+        <div style="margin-left: 50px;">
+            <a href="index.html"><img src="img/logo2.jpg" alt="CCA LOGO" title="CrossCountryAuto"
+                    style="width: 200px;"></a>
+        </div>
+        <div style="text-align: center;  ">
+            <ul>
+                <li><a href="index.html" class="button">
+                        <span class="button__line button__line--top"></span>
+                        <span class="button__line button__line--right"></span>
+                        <span class="button__line button__line--bottom"></span>
+                        <span class="button__line button__line--left"></span>
+                        Главная
+                    </a></li>
+                <li><a href="services.html" class="button">
+                        <span class="button__line button__line--top"></span>
+                        <span class="button__line button__line--right"></span>
+                        <span class="button__line button__line--bottom"></span>
+                        <span class="button__line button__line--left"></span>
+                        Услуги
+                    </a></li>
+                <li><a href="about.html" class="button">
+                        <span class="button__line button__line--top"></span>
+                        <span class="button__line button__line--right"></span>
+                        <span class="button__line button__line--bottom"></span>
+                        <span class="button__line button__line--left"></span>
+                        О нас
+                    </a></li>
+                <li><a href="contacts.html" class="button" style="color: red; border-bottom: 3px solid red;">
+                        <span class="button__line button__line--top"></span>
+                        <span class="button__line button__line--right"></span>
+                        <span class="button__line button__line--bottom"></span>
+                        <span class="button__line button__line--left"></span>
+                        Контакты
+                    </a></li>
+            </ul>
+        </div>
+        <a href="#" class="button buttonglav openFormLink open-modal-btn"
+            style="margin-left: 10%; margin-right: 1%; align-items: center; font-size: 24px;">
+            <span class="button__line button__line--top"></span>
+            <span class="button__line button__line--right"></span>
+            <span class="button__line button__line--bottom"></span>
+            <span class="button__line button__line--left"></span>
+            Заявка
+        </a>
+        <img src="img/icons8-телеграм-24.png" alt="telegram">
+        <img src="img/icons8-vk-30.png" alt="vk">
+        <img src="img/icons8-whatsapp-messenger-cross-platform-mobile-devices-messaging-application-24.png"
+            alt="whatsapp">
+        <img src="img/icons8-instagram-24.png" alt="instagram">
+    </div>
+    <div class="divssilka">
+        <div class="divcontactsA"><a href="index.html" class="contactsA">ГЛАВНАЯ</a>
+            <p>&nbsp;»&nbsp;</p>
+            <p>КОНТАКТЫ</p>
+        </div>
+        <p style="font-size: 300%; margin-top: 0%;"><b>КОНТАКТЫ</b></p>
+    </div>
+
+    <div style="background-color: #242424; height: auto; display: flex;">
+        <div style="width: 50%; ">
+            <img src="img/contacts.jpg" alt="mustang" style="height: 100%; width: 100%;">
+        </div>
+        <div style="color: aliceblue; font-size: 130%; width: 50%; margin-left: 4%;">
+            <b>
+            <h1>НОМЕРА ДЛЯ СВЯЗИ</h1>
+            <p>+7-989-579-97-98</p>
+            <p>+7-XXX-XXX-XX-XX</p>
+            <p>+7-XXX-XXX-XX-XX</p>
+            <br>
+            <p>ВРЕМЯ РАБОТЫ:</p>
+            <p>ПН-ВС: 9:00 - 18:00</p>
+            </b>
+            <br>
+            <div class="feedback-form">
+                <h1>ОБРАТНАЯ СВЯЗЬ</h1>
+                <form id="feedbackForm" action="submit_form.php" method="post">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    <div class="phone-input">
+                        <span class="phone-code" style=" padding-bottom: 3%;">+7</span>
+                        <input type="tel" id="phone" name="phone" pattern="\d{10}" placeholder="(999) 999-99-99"
+                            required>
+                    </div>
+                    <textarea id="message" name="message" placeholder="Сообщение" rows="4" required></textarea>
+                    <button type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                </form>
+            </div>
+            <div id="modal" class="modal1">
+                <div class="modal-content">
+                    <p>Спасибо за ваше сообщение!</p>
+                    <p>Мы ценим ваше мнение и обязательно свяжемся с вами в ближайшее время. Ваша обратная связь помогает улучшить наши услуги и обеспечивать наилучший опыт для всех наших клиентов. </p>
+                    <p>Наши специалисты работают с 9:00 до 18:00 по будням, и мы постараемся ответить вам как можно скорее.</p>
+                    <button id="closeButton" >Закрыть</button>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                        fill="#333333" />
+                </svg>
+            </button>
+            <div id="form-container">
+                <h2>Отлично! Осталась лишь самая малость!</h2>
+                <form id="registration-form">
+                    <label for="name">Как вас зовут?</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Ваш телефон</label>
+                    <div class="phone-input">
+                        <span class="phone-code" style="font-size: 130%; padding-bottom: 3%;">+7</span>
+                        <input type="tel" id="phone" name="phone" pattern="\d{10}" placeholder="(999) 999-99-99"
+                            required>
+                    </div>
+                    <button type="submit">НАЧАТЬ ПОДБОР</button>
+                </form>
+            </div>
+            <div></div>
+            <div id="confirmation-message">
+                <h2 style="font-size: 240%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">CrossCountryAuto</h2>
+                <p>Ожидайте, наши специалисты в скором времени с вами свяжутся</p>
+            </div>
+        </div>
+    </div>
+    <!-- МОДАЛЬНОЕ ОКНО -->
+
+    <div class="nizheader">
+        <div style="margin-left: 50px;">
+            <a href="index.html"><img src="img/logo2.jpg" alt="CCA LOGO" title="CrossCountryAuto"
+                    style="width: 200px;"></a>
+        </div>
+        <div style="text-align: right; margin: 2% 5% 0% 0%; color: aliceblue;" >
+            <a href="###" style="font-size: 90%; background-color: black; color: aliceblue; text-decoration: none;">Политика конфиденциальности</a><br>
+            <p style="font-size: 90%; margin-top: 1%;">© 2023 СrossCountryAuto. Все права защищены.</p>
+        </div>
+    </div>
+</body>
+
+</html>
